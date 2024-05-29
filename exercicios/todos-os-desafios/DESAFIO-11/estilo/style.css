@@ -66,21 +66,20 @@ section.imagem>p{
     background-color: rgba(0, 0, 0, 0.514);
     text-shadow: 1px 1px 0px black;
     background-size: cover;
-    background-size: 100%;
+    
 }
 section#img01{
-background-image: url(../pacote-d012/imagens/background001.jpg);
+background-image: url(../background001.jpg);
 background-position: right center;
 background-size: cover;
-background-size: 100%;
 
 
 }
 section#img02{
-background-image: url(../pacote-d012/imagens/background002.jpg);
+background-image: url(../background002.jpg);
 background-position: right center;
 background-size: cover;
-background-size: 100%;
+
 
 }
 footer{

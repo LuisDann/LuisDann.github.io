@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombeiros Mirins - Galeria de Fotos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <!-- Logo do projeto -->
+        <div class="logo-container">
+            <img src="Design sem nome (2).png" alt="Logo Bombeiros Mirins" class="logo">
+        </div>
+
+        <!-- Título da Galeria -->
+        <h1 class="title">Galeria de Bombeiros Mirins</h1>
+        <p class="description">Transformando crianças em heróis! Acompanhe a evolução do nosso projeto.</p>
+        
+       
+        
+        <!-- Primeira imagem com descrição -->
+        <div class="gallery-item">
+            <img src="butijão.jpg" alt="Bombeiro Mirim em treinamento" onclick="openModal(1)">
+            <div class="text">
+                <h3>Treinamento de Bombeiro Mirim</h3>
+                <p>As crianças aprendem sobre técnicas básicas de combate a incêndios.</p>
+            </div>
+        </div>
+
+        <!-- Segunda imagem com descrição -->
+        <div class="gallery-item">
+            <img src="fila militar.jpg" alt="Bombeiro Mirim com uniforme" onclick="openModal(2)">
+            <div class="text">
+                <h3>Preparação com Uniforme</h3>
+                <p>A importância de usar o uniforme correto para segurança.</p>
+            </div>
+        </div>
+
+        <!-- Terceira imagem com descrição -->
+        <div class="gallery-item">
+            <img src="todos fazendo a saudação militar.jpg" alt="Bombeiros Mirins em ação" onclick="openModal(3)">
+            <div class="text">
+                <h3>Bombeiros Mirins em Ação</h3>
+                <p>Os jovens bombeiros aplicando o que aprenderam em situações simuladas.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para visualização em tela cheia -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="modal-slides">
+                <div class="modal-slide fade">
+                    <img src="butijão.jpg" alt="Bombeiro Mirim em treinamento">
+                </div>
+                <div class="modal-slide fade">
+                    <img src="fila militar.jpg" alt="Bombeiro Mirim com uniforme">
+                </div>
+                <div class="modal-slide fade">
+                    <img src="todos fazendo a saudação militar.jpg" alt="Bombeiros Mirins em ação">
+                </div>
+            </div>
+            <button class="back-button" onclick="closeModal()">Voltar</button>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+ <!-- Link para voltar para a primeira página -->
+ <a href="blog.html" class="back-to-home">Voltar para a página inicial</a>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
